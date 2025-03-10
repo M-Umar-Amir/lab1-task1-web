@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; text-align: center;">
+    <header style="background: #333; color: white; padding: 15px;">
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <ul style="list-style: none; padding: 0; display: flex; justify-content: center; gap: 20px;">
+                <li style="display: inline;"><a href="#about" style="color: white; text-decoration: none; font-size: 18px;">About</a></li>
+                <li style="display: inline;"><a href="#projects" style="color: white; text-decoration: none; font-size: 18px;">Projects</a></li>
+                <li style="display: inline;"><a href="#contact" style="color: white; text-decoration: none; font-size: 18px;">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about" style="padding: 20px;">
+        <h2>About Me</h2>
+        <p>Welcome to my portfolio. I am a web developer passionate about creating interactive web experiences.</p>
+        <img src="UmarAmirPic.jpeg" alt="About me image" width="480" height="480" style="border-radius: 8px;">
+    </section>
+    
+    <section id="projects" style="padding: 20px;">
+        <h2>Projects</h2>
+        <p>Here are some of my recent projects.</p>
+        <img src="PantryUi.png" alt="Project 1" width="300" height="300" style="border-radius: 8px; margin-right: 10px;">
+        <img src="Screenshot_2023-05-14_09-28-39.png" alt="Project 2" width="300" height="300" style="border-radius: 8px;">
+    </section>
+    
+    <section style="padding: 20px;">
+        <h2>Introduction Video</h2>
+        <video width="600" controls style="border-radius: 8px;">
+            <source src="TrustWorks.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+    
+    <section id="contact" style="padding: 20px;">
+        <h2>Contact Me</h2>
+        <form action="submit-form.php" method="POST" style="max-width: 500px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+            <label for="name" style="display: inline-block; width: 80px; font-weight: bold;">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+            <br><br>
+            
+            <label for="email" style="display: inline-block; width: 80px; font-weight: bold;">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+            <br><br>
+            
+            <label for="message" style="display: inline-block; width: 80px; font-weight: bold; vertical-align: top;">Message:</label>
+            <textarea id="message" name="message" placeholder="Your message here" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; width: 70%;"></textarea>
+            <br><br>
+            
+            <button type="submit" style="background: #333; color: white; padding: 10px 15px; border: none; cursor: pointer; border-radius: 5px;">Send</button>
+        </form>
+        
+        <h3>Find Me Here</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093664!2d144.95565131531687!3d-37.81732697975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf4c9b0c8a4b9d2a4!2sMelbourne%2C+Australia!5e0!3m2!1sen!2sus!4v1615149134855!5m2!1sen!2sus" width="600" height="450" style="border:0; display: block; margin: 0 auto;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    
+    <footer style="background: #333; color: white; text-align: center; padding: 15px; margin-top: 20px;">
+        <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
